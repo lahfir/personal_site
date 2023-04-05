@@ -5279,6 +5279,19 @@ figcaption {
     font-weight: 400;
 }
 
+.button-container {
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.3s ease-in;
+    margin-left: 20px;
+}
+
 .text-field {
     height: 47px;
     margin-top: 8px;
@@ -7204,6 +7217,14 @@ b {
     -ms-flex-pack: justify;
     justify-content: space-between;
     grid-row-gap: 15px;
+}
+
+.social-flex-1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    grid-row-gap: 15px;
+    flex-wrap: wrap;
 }
 
 .button-cricle {
