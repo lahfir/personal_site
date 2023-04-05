@@ -6228,6 +6228,12 @@ figcaption {
     align-items: center;
 }
 
+b {
+    background: -webkit-linear-gradient(white, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .photo-move {
     position: relative;
     overflow: hidden;
