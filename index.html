@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com -->
-<!-- Last Published: Tue May 10 2022 09:34:44 GMT+0000 (Coordinated Universal Time) -->
 <html
   data-wf-page="6266736aae472ec411678dd2"
   data-wf-site="6266736aae472e59c4678dcf"
@@ -33,6 +31,11 @@
   <body>
     <div id="Top" class="body-content">
       <div class="main-section">
+        <div class="background-container">
+          <div class="text"></div>
+          <div class="overlay"></div>
+          <div class="overlay2"></div>
+        </div>
         <div class="navigation-wrapper">
           <div class="navigation">
             <div class="logo-flex _2">
@@ -43,7 +46,7 @@
                 class="logo-wrapper w-inline-block w--current"
               >
                 <img
-                  src="assets/Logo.png"
+                  src="assets/Logo-removebg-preview.png"
                   loading="lazy"
                   sizes="(max-width: 479px) 100px, 110px"
                   width="110"
@@ -708,7 +711,7 @@
                 </div>
               </div>
             </div>
-            <div id="Resume" class="margin-200px _2">
+            <div id="Resume" class="margin-120px">
               <div
                 data-w-id="92d8e802-c9fa-5840-4359-c0990d329a6e"
                 style="opacity: 0"
@@ -1265,6 +1268,91 @@
                         <div style="opacity: 0" class="work-overlay"></div>
                       </a>
                     </div>
+                    <div
+                      data-tilt
+                      data-w-id="1573b5e9-3de2-60fc-2afb-a35a3a746a29"
+                      style="opacity: 0"
+                      role="listitem"
+                      class="w-dyn-item"
+                    >
+                      <a
+                        data-w-id="5e39b51d-0007-7738-3406-a38d2235bb18"
+                        class="portfolio-wrapper w-inline-block"
+                        href="project/ElectronJS App.html"
+                      >
+                        <div>
+                          <img
+                            src="assets/Inshorts News App/pika-1680710607605-1x.jpeg"
+                            loading="lazy"
+                            style="filter: grayscale(100%)"
+                            alt=""
+                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 43vw, 34vw"
+                            class="project-image"
+                          />
+                        </div>
+                        <div
+                          style="
+                            -webkit-transform: translate3d(0, 0, 0)
+                              scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0)
+                              skew(0, 0);
+                            -moz-transform: translate3d(0, 0, 0)
+                              scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0)
+                              skew(0, 0);
+                            -ms-transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
+                              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            transform: translate3d(0, 0, 0) scale3d(0, 0, 1)
+                              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                            opacity: 0;
+                          "
+                          class="work-circle"
+                        >
+                          <div>View<br /><em>work</em></div>
+                        </div>
+                        <div class="flex-project">
+                          <h3
+                            style="
+                              -webkit-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              -moz-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              -ms-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              opacity: 0;
+                            "
+                            class="project-title"
+                          >
+                            ReactJS + ElectronJS App
+                          </h3>
+                          <p
+                            style="
+                              -webkit-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              -moz-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              -ms-transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              transform: translate3d(0, 10px, 0)
+                                scale3d(1, 1, 1) rotateX(0) rotateY(0)
+                                rotateZ(0) skew(0, 0);
+                              opacity: 0;
+                            "
+                            class="category"
+                          >
+                            Native App for Windows/Mac, Personal Project
+                          </p>
+                        </div>
+                        <div style="opacity: 0" class="work-overlay"></div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1642,6 +1730,68 @@
         maxTilt: 3,
         speed: 300,
       });
+
+      const container = document.querySelector(".background-container");
+      const text = document.querySelector(".text");
+
+      const texts = [
+        "JavaScript",
+        "Python",
+        "C",
+        "HTML/CSS",
+        "Node.js",
+        "Flask",
+        "Bootstrap",
+        "React Native",
+        "React JS",
+        "Selenium",
+        "Git",
+        "VS Code",
+        "PyCharm",
+        "Android Studio",
+        "Xcode",
+        "Eclipse",
+        "Jira",
+        "JMeter",
+        "React.js",
+        "JQuery",
+        "Redux",
+        "Swagger",
+        "MongoDB",
+        "MySQL",
+        "Figma",
+        "Adobe XD",
+        "AWS S3",
+        "Firebase",
+      ];
+
+      const getRandomInt = (min, max) => {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      };
+
+      setInterval(() => {
+        const w = container.clientWidth;
+        const h = container.clientHeight;
+        const textW = text.offsetWidth;
+        const textH = text.offsetHeight;
+
+        const x = getRandomInt(0, w - textW);
+        const y = getRandomInt(0, h - textH);
+
+        text.style.left = `${x}px`;
+        text.style.top = `${y}px`;
+
+        const randomIndex = getRandomInt(0, texts.length - 1);
+        text.innerText = texts[randomIndex];
+
+        text.classList.add("visible");
+
+        setTimeout(() => {
+          text.classList.remove("visible");
+        }, 1500);
+      }, 3000);
     </script>
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script

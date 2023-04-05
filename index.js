@@ -1,9 +1,4 @@
 /*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
  */ !(function (e) {
   var t = {};
   function n(r) {
@@ -480,18 +475,6 @@
     t.CSV_CURRENCY_TEMPLATE = O;
     var y = [E(v), " ", E(b)].join("");
     t.CSV_INTEGRATION_CURRENCY_TEMPLATE = y;
-    t.DOWNLOAD_FILES_FAKE_DATA = [
-      {
-        id: "5d8fcb6d94dd1853060fb3b3",
-        name: "The modern web design process - Webflow Ebook.pdf",
-        url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8a680b972888929747b_The%20modern%20web%20design%20process%20-%20Webflow%20Ebook.pdf",
-      },
-      {
-        id: "5d8fcb6d94dd1853060fb3b4",
-        name: "The freelance web designers guide - Webflow Ebook.pdf",
-        url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8e6abe52b33243a22cf_The%20freelance%20web%20designer%E2%80%99s%20guide%20-%20Webflow%20Ebook.pdf",
-      },
-    ];
     t.DOWNLOAD_FILES_KEY_PATH = "download-files";
     t.DOWNLOAD_FILES_EDITABLE_FIELDS = { name: !0, url: !0 };
     t.SUBSCRIPTION_INTERVAL_ENUM = ["day", "week", "month", "year"];
@@ -60873,9 +60856,3 @@ Webflow.require("ix2").init({
     ],
   },
 });
-
-Webflow.require("commerce") &&
-  Webflow.require("commerce").init({
-    siteId: "6266736aae472e59c4678dcf",
-    apiUrl: "https://render.webflow.com",
-  });

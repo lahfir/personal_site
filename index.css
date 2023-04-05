@@ -5480,6 +5480,33 @@ figcaption {
     justify-content: flex-start;
 }
 
+.background-container {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 95vh;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(32, 32, 32) 80%);
+}
+
+.text {
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 5px 50px #fff;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 0.4;
+    transform: scale(1);
+}
+
 .color-row.grey {
     margin-bottom: 25px;
     padding-bottom: 0px;
@@ -5495,7 +5522,7 @@ figcaption {
     margin-bottom: 0px;
     font-size: 7rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: capitalize;
     letter-spacing: -6px;
 }
@@ -7417,6 +7444,10 @@ b {
     backdrop-filter: blur(10px);
 }
 
+.margin-120px {
+    margin-top: 120px;
+}
+
 .margin-200px {
     margin-top: 200px;
 }
@@ -8100,6 +8131,7 @@ b {
     .title-1 {
         font-size: 80px;
         line-height: 1;
+        margin-top: 100px;
     }
 
     .light-gray-2 {
@@ -8531,6 +8563,7 @@ b {
 
     .title-1 {
         font-size: 50px;
+        letter-spacing: -3px;
     }
 
     .light-gray-2 {
