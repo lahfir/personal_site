@@ -5224,11 +5224,13 @@ figcaption {
     font-size: 17px;
     font-weight: 500;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button:hover {
     background-color: #fff;
     color: #000;
+    font-size: 18px;
 }
 
 .button.small {
@@ -5538,7 +5540,7 @@ figcaption {
     line-height: 1;
     font-weight: 800;
     text-transform: capitalize;
-    letter-spacing: -6px;
+    letter-spacing: -4px;
 }
 
 .light-gray-2 {
@@ -5671,6 +5673,7 @@ figcaption {
     font-size: 43px;
     line-height: 1.05;
     font-weight: 300;
+    letter-spacing: 0px;
 }
 
 .title-2._2 {
